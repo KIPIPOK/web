@@ -12,6 +12,16 @@ header {
     font-size: 16pt;
 }
 
+header:hover {
+    color: gold;
+    font-size: 35pt;
+}
+
+header:active {
+    color: gold;
+    font-size: 50pt;
+}
+
 footer {
     background: linear-gradient(to right,red,orange,yellow,green,lightblue,blue, purple);
     color: lightgreen;
@@ -19,7 +29,14 @@ footer {
     font-size: 16pt;
     text-align: right;
 }
-
+footer:hover {
+    color: gold;
+    font-size: 35pt;
+}
+footer:active {
+color: gold;
+    font-size: 50pt;
+}
 a {
     color: chartreuse;
     text-decoration: none;
