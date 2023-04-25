@@ -13,6 +13,10 @@
             let result = a + b;
             alert('Сумма ' + a + ' и ' + b + ' равна '  + result);
         }
+        function showAuthor() {
+            let author = 'Авторы страницы:\nПереладова Алёна, Лабаскина София\nПочему котики такие милые?\nКотики мнут и топчут мягкие поверхности';
+            alert(author);
+        }
     </script>
     <style>
         .message {
@@ -30,16 +34,16 @@
 </head>
 
 <body>
-    <header>
+    <header onclick = "showAuthor()">
         НГТУ, ФБ, Лабораторная работа 5
     </header>
 
     <main>
         <div class="message" onclick ="showSum()">Сколько будет 5154+7891?</div>
-        <div class="message">Узнать, кто авторы страницы</div>
+        <div class="message" onclick = "showAuthor()">Узнать, кто авторы страницы</div>
     </main>
 
-    <footer>
+    <footer onclick = "showAuthor()">
            
         &copy; Лабаскина София,Переладова Алёна, ФБИ-12, 2 курс, 2023
      </footer>
