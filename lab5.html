@@ -45,6 +45,31 @@
             let result = a / b; 
             alert('Деление ' + a + ' и ' + b + ' равна ' + result); 
         } 
+
+        function changeOutput(buttonNum, backColor, textColor) { 
+            let output = document.getElementById('output'); 
+            output.innerHTML = 'Нажата кнопка ' + buttonNum; 
+            output.style.backgroundColor = 'red' + backColor; 
+            output.style.color = 'yellow' + textColor; 
+        } 
+        function changeOutputt(buttonNum, backColor, textColor) { 
+            let output = document.getElementById('output'); 
+            output.innerHTML = 'Нажата кнопка ' + buttonNum; 
+            output.style.backgroundColor = 'black' + backColor; 
+            output.style.color = 'lime' + textColor; 
+        }  
+        function changeOutputtt(buttonNum, backColor, textColor) { 
+            let output = document.getElementById('output'); 
+            output.innerHTML = 'Нажата кнопка ' + buttonNum; 
+            output.style.backgroundColor = 'blue' + backColor; 
+            output.style.color = 'pink' + textColor; 
+        } 
+        function changeOutputttt(buttonNum, backColor, textColor) { 
+            let output = document.getElementById('output'); 
+            output.innerHTML = 'Нажата кнопка ' + buttonNum; 
+            output.style.backgroundColor = 'violet' + backColor; 
+            output.style.color = 'green' + textColor; 
+        } 
     </script>
     <style>
         .message {
@@ -57,6 +82,13 @@
             height: 25px;
             text-align: center;
             border-color: teal;
+        }
+
+        #output { 
+            border: 1px solid; 
+            width: 300px; 
+            height: 40px; 
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -74,6 +106,14 @@
         <div class="message" onclick="showDifference()">Найти разность чисел</div> 
         <div class="message" onclick="showMult()">Найти произведение чисел</div> 
         <div class="message" onclick="showDivis()">Найти деление чисел</div> 
+
+        <div> 
+            <input type="button"value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow')"> 
+            <input type="button" value="Кнопка 2" onclick="changeOutputt(2, 'black', 'lime')"> 
+            <input type="button" value="Кнопка 3" onclick="changeOutputtt(3, 'blue', 'pink')"> 
+            <input type="button" value="Кнопка 4" onclick="changeOutputttt(4, 'violet', 'green')"> 
+        </div> 
+        <div id='output'></div> 
     </main>
 
     <footer onclick = "showAuthor()">
