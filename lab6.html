@@ -47,6 +47,16 @@
             }
             startGame();
         }
+        function ruleon() {
+            let screens = document.getElementsByClassName('rule');
+            screens[0].style.display = 'none';
+            screens[1].style.display = 'block';
+        }
+        function ruleoff() {
+            let screens = document.getElementsByClassName('rule');
+            screens[1].style.display = 'none';
+            screens[0].style.display = 'block';
+        }
     </script>
 </head>
 <body>
@@ -81,6 +91,17 @@
             <div>
                 <button onclick="again()">Сыграть ещё раз</button>
             </div>
+        </div>
+        <div class="rule">
+            <button onclick="ruleon()">
+            </button>
+        </div>
+        <div class="rule" style="display: none;">
+            <button onclick="ruleof()">Скрыть правила игры</button>
+            <div>А. сначала нажмите на кнопку "сыграть в игру"</div>
+            <div>Б. потом делайте ещё что-то</div>
+            <div>В. потом ещё что-то</div>
+            <div>Г. если захотите, то</div>
         </div>
     </main>
     <footer>
